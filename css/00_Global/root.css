@@ -1,0 +1,33 @@
+:root {
+  --white-color: #fff;
+  --secondary-color: #044aa0;
+
+  /* background */
+  --primary-color: #4795f5;
+  --light-gray-color: #f2f3f7;
+
+  /* avatar background color */
+  --pink-color: #fdd3e8;
+  --green-color: #bdfac8;
+
+  /* text color */
+  --dark-color: #393939;
+  --dark-color2: #14141f;
+  --light-color: #9b9fa4;
+
+  --border-raduis-tiny: 0.12rem;
+  --border-raduis-xs: 0.25rem;
+  --border-raduis-sm: 0.5rem;
+  --border-raduis-md: 1rem;
+  --border-raduis-lg: 1.5rem;
+  --border-raduis-xl: 2rem;
+  --border-raduis-2xl: 2.5rem;
+  --border-raduis-3xl: 3rem;
+
+  --font-size-sm: 0.75rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 5rem;
+}
