@@ -16,17 +16,26 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
-  /* background: linear-gradient(141deg, #fff 0%, #f7f7f7 51%, #f2f8f2 75%); */
+  font-size: clamp(0.8rem, 5vw, 1.5rem);
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    to right,
-    var(--light-gray-color) 0%,
-    var(--light-gray-color) 50%,
-    var(--primary-color) 50%,
-    var(--primary-color) 100%
-  );
+
+  background: url("../../images/clouds.png"), url("../../images/fog-low1.png"),
+    url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, contain, cover;
+  background-position: -5rem 65rem, 20rem 40rem, 0 0;
+  animation: cloudMovement 70s linear infinite;
+}
+
+@keyframes cloudMovement {
+  from {
+    background-position: -5rem 65rem, 1rem 35rem, 0 0;
+  }
+
+  to {
+    background-position: 100% 40rem, 1rem 35rem, 0 0;
+  }
 }
 
 button,
