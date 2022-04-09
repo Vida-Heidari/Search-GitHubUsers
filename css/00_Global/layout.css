@@ -181,3 +181,9 @@ a {
     max-width: 1320px;
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  body {
+    background-size: auto, auto, cover;
+  }
+}

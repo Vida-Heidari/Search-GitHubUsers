@@ -32,6 +32,8 @@ const searchUser = (event) => {
     setTimeout(function () {
       y.className = y.className.replace("show", "");
     }, 3000);
+
+    user.classList.add("hidden");
     return;
   }
 
