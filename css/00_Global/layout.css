@@ -26,6 +26,7 @@ body {
   background-size: auto, contain, cover;
   background-position: -5rem 65rem, 20rem 40rem, 0 0;
   animation: cloudMovement 70s linear infinite;
+  animation: firstload 1.5s ease-in-out;
 }
 
 @keyframes cloudMovement {
@@ -35,6 +36,15 @@ body {
 
   to {
     background-position: 100% 40rem, 1rem 35rem, 0 0;
+  }
+}
+
+@keyframes firstload {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
