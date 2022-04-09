@@ -29,7 +29,7 @@
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  background-color: var(--pink-color);
+  background-color: var(--white-color);
   border: 2px solid var(--primary-color);
   margin-right: 2rem;
 }
@@ -40,7 +40,7 @@
 }
 
 .user--url a,
-.user__follow {
+.user__about {
   color: var(--light-color);
   transition: all 0.3s ease;
 }
@@ -49,16 +49,21 @@
   color: var(--dark-color);
 }
 
-.user__follow {
+.user__about {
   display: flex;
   flex-direction: row;
 }
 
-.user__follow div:first-child {
-  margin-right: 2rem;
+.user__about .about:hover {
+  text-shadow: 0 0 0.8rem var(--green-color);
+  cursor: pointer;
 }
 
-.user__follow span {
+.user__about div:nth-child(2) {
+  margin: 0 2rem;
+}
+
+.user__about span {
   color: var(--dark-color);
   font-weight: bold;
 }
@@ -76,8 +81,12 @@
   margin-right: 2rem;
 }
 
-.user__right-side i:last-child {
+.user__right-side .hire {
   padding: 1rem 2rem;
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+.user__right-side .green {
+  background-color: green;
 }

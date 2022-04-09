@@ -17,12 +17,11 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <section id="search">
         <div class="container">
           <h1>GitHub Profiles</h1>
           <div class="form">
-            <!-- <label for="username">GitHub Username</label> -->
             <input
               type="text"
               class="username input"
@@ -35,9 +34,11 @@
             </button>
           </div>
         </div>
+        <div id="snackbar--empty-input">Oops! . . . Searchbar is Empty</div>
+        <div id="snackbar--not-found">User Not Found . . .</div>
       </section>
 
-      <section class="github-user">
+      <section class="github-user hidden">
         <div class="container github__wrapper">
           <div class="user__left-side">
             <div class="user__avatar">
@@ -48,18 +49,31 @@
                 <h3 id="user__name">Vida Heidari</h3>
               </div>
               <div class="user--url">
-                <a class="user__github__url" href="#">@vida-heidari</a>
+                <a class="user__github__url" href="#">vida-heidari</a>
               </div>
-              <div class="user__follow">
-                <div><span class="followers">1050</span> followers</div>
-                <div><span class="following">980</span> following</div>
+              <div class="user__about">
+                <div class="repositories about">
+                  <span class="repository">50</span> Repositories
+                </div>
+
+                <div class="about">
+                  <span class="followers">1050</span> Followers
+                </div>
+
+                <div class="about">
+                  <span class="following">980</span> Following
+                </div>
               </div>
             </div>
           </div>
 
           <div class="user__right-side">
             <i class="fa-solid fa-ellipsis"></i>
-            <i class="fa-solid fa-pen"></i>
+            <!-- <i class="fa-solid fa-pen"></i> -->
+            <i
+              class="fa-solid fa-circle-check check-mark hire"
+              title="Hire Me"
+            ></i>
           </div>
         </div>
       </section>
