@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-size: auto, contain, cover;
   background-position: -5rem 65rem, 20rem 40rem, 0 0;
-  animation: cloudMovement 70s linear infinite, firstload 1.5s ease-in-out;
+  animation: cloudMovement 70s linear infinite, firstload 1s ease-in-out;
 }
 
 @keyframes cloudMovement {

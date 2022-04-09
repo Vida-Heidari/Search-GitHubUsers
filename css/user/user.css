@@ -54,18 +54,21 @@
   flex-direction: row;
 }
 
-.user__about .about:hover {
-  text-shadow: 0 0 0.8rem var(--green-color);
+.user__about span {
+  color: var(--dark-color);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.user__about .about:hover,
+.user__about .about:hover span {
+  /* text-shadow: 0 0 0.8rem var(--green-color); */
+  color: var(--primary-color);
   cursor: pointer;
 }
 
 .user__about div:nth-child(2) {
   margin: 0 2rem;
-}
-
-.user__about span {
-  color: var(--dark-color);
-  font-weight: bold;
 }
 
 .user__right-side i {
