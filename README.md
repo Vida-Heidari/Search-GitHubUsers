@@ -24,7 +24,7 @@
 
   <h5 align="center">GitHub Profile</h5>
 
-Hereyou can find people on GitHub and see thier profiles
+Here you can find people on GitHub and see thier profiles
 
 ### Built With
 
