@@ -60,3 +60,14 @@
   opacity: 0.9;
   letter-spacing: 0.2rem;
 }
+
+@media screen and (max-width: 425px) {
+  .form .input {
+    font-size: var(--font-size-xl);
+  }
+
+  .form input[type="text"]::placeholder {
+    font-size: var(--border-raduis-lg);
+    letter-spacing: 1px;
+  }
+}
