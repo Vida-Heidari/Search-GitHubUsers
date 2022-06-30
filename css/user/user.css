@@ -52,6 +52,7 @@
 .user__about {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .user__about span {
@@ -92,4 +93,63 @@
 
 .user__right-side .green {
   background-color: green;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+  .user__right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .user__right-side i:first-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .github__wrapper {
+    flex-direction: column;
+  }
+
+  .user__right-side {
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .user__right-side i {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .github__wrapper {
+    max-width: 80vw;
+    margin-bottom: 5rem;
+  }
+  .user__left-side {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .user__info .user--url {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .github__wrapper {
+    padding: 3rem 1.5rem;
+    margin-top: 5rem;
+  }
+  .user__about {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
